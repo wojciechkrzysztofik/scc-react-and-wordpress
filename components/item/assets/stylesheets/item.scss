@@ -1,0 +1,31 @@
+@import 'bootstrap';
+
+.item {
+  float: left;
+  list-style: none;
+
+  &:nth-child(even) {
+    margin-left: 34px;
+  }
+
+  a {
+    border: 1px solid $gray-light;
+    width: 225px;
+    background-color: $body-bg;
+    margin-bottom: 20px;
+    display: block;
+    overflow: hidden;
+    border-radius: 8px;
+    transition: .3s all;
+
+    img {
+      width: 100%;
+      display: block;
+    }
+
+    &:focus,
+    &:hover {
+      border-color: $gray-lighter;
+    }
+  }
+}

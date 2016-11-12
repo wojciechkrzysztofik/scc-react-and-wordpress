@@ -1,0 +1,44 @@
+@import 'bootstrap';
+@import 'global';
+
+.list-page {
+  @include make-xs-column(10);
+  @include make-xs-column-offset(1);
+  margin-top: 60px;
+
+  .wrapper {
+    background: rgba(204, 204, 204, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+
+    .innerContainer {
+      background: $body-bg;
+      border-radius: 15px;
+      padding: 30px 50px;
+
+      header {
+        .col-xs-8 {
+          padding-left: 0;
+        }
+
+        h1 {
+          text-transform: uppercase;
+          margin-top: 65px;
+        }
+      }
+
+      .items {
+        @include clearfix();
+        margin-top: 30px;
+
+        ul {
+          height: 475px;
+          overflow: scroll;
+          margin: 0;
+          padding: 0;
+        }
+      }
+    }
+  }
+
+}

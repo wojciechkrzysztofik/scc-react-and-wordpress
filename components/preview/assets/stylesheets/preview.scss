@@ -1,0 +1,43 @@
+@import 'bootstrap';
+
+.preview-page {
+  @include make-xs-column(10);
+  @include make-xs-column-offset(1);
+  margin-top: 60px;
+
+  .wrapper {
+    background: rgba(204, 204, 204, 0.7);
+    padding: 30px;
+    border-radius: 15px;
+
+    .innerContainer {
+      background: $body-bg;
+      border-radius: 15px;
+      padding: 20px;
+
+      .title {
+        font-weight: normal;
+        margin: 0;
+        text-transform: uppercase;
+      }
+
+      .imageWrapper {
+        width: 100%;
+        height: 366px;
+        border: 1px solid $gray-light;
+        border-radius: 10px;
+        overflow: hidden;
+
+        img {
+          display: block;
+          overflow: hidden;
+        }
+      }
+
+      .name {
+        text-transform: uppercase;
+      }
+    }
+  }
+
+}

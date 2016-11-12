@@ -1,0 +1,26 @@
+@import 'bootstrap';
+
+.home-page {
+  @include make-xs-column(10);
+  @include make-xs-column-offset(1);
+  margin-top: 60px;
+
+  .wrapper {
+    background: $body-bg;
+    padding: 75px;
+    border-radius: 15px;
+    opacity: 0.7;
+    img {
+      display: block;
+      margin: auto;
+    }
+  }
+
+  .buttons {
+    margin-top: 25px;
+
+    .col-xs-6 {
+      padding: 0;
+    }
+  }
+}
